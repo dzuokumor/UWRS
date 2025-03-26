@@ -56,3 +56,283 @@ INFO:werkzeug:127.0.0.1 - - [25/Mar/2025 15:17:52] "[33mPUT /api/claim/1 HTTP/1
 INFO:werkzeug:127.0.0.1 - - [25/Mar/2025 15:18:49] "[33mPUT /api/report/report/claim/1 HTTP/1.1[0m" 404 -
 INFO:werkzeug:127.0.0.1 - - [25/Mar/2025 15:19:06] "PUT /api/report/claim/1 HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [25/Mar/2025 15:20:01] "PUT /api/report/update/1 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug:127.0.0.1 - - [25/Mar/2025 16:25:54] "[31m[1mPUT /auth/login HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [25/Mar/2025 16:26:54] "[31m[1mPUT /auth/login HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [25/Mar/2025 16:27:10] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Mar/2025 16:30:07] "[33mPOST /volunteer/start/1 HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug:127.0.0.1 - - [25/Mar/2025 16:33:07] "[31m[1mPOST /api/volunteer/start/1 HTTP/1.1[0m" 403 -
+INFO:werkzeug:127.0.0.1 - - [25/Mar/2025 16:33:42] "[33mPOST /api/volunteer/join/1 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [25/Mar/2025 16:34:40] "[31m[1mPOST /auth/signup HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [25/Mar/2025 16:37:13] "[35m[1mPOST /auth/signup HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [25/Mar/2025 16:37:46] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Mar/2025 16:38:49] "[31m[1mPOST /api/volunteer/start/1 HTTP/1.1[0m" 403 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\routes\\volunteer.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug:127.0.0.1 - - [25/Mar/2025 16:41:05] "[35m[1mPOST /api/volunteer/start/1 HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug:127.0.0.1 - - [25/Mar/2025 16:52:32] "[35m[1mPOST /api/volunteer/start/1 HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug:127.0.0.1 - - [25/Mar/2025 16:56:40] "[35m[1mPOST /api/volunteer/start/1 HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\routes\\volunteer.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\routes\\volunteer.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug:127.0.0.1 - - [25/Mar/2025 17:03:02] "[31m[1mPOST /api/volunteer/start/1 HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [25/Mar/2025 17:03:41] "[35m[1mPOST /api/volunteer/start/1 HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\routes\\volunteer.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug:127.0.0.1 - - [25/Mar/2025 17:12:40] "[35m[1mPOST /api/volunteer/start/1 HTTP/1.1[0m" 201 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+ERROR:root:Registration error: 'is_verified' is an invalid keyword argument for User
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2025 19:50:11] "[35m[1mPOST /auth/signup HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\models.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+ERROR:root:Registration error: [WinError 10061] No connection could be made because the target machine actively refused it
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2025 19:57:41] "[35m[1mPOST /auth/signup HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2025 20:11:45] "[31m[1mPOST /auth/signup HTTP/1.1[0m" 409 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2025 20:14:47] "[31m[1mPOST /auth/signup HTTP/1.1[0m" 409 -
+ERROR:root:Registration error: [WinError 10061] No connection could be made because the target machine actively refused it
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2025 20:28:44] "[35m[1mPOST /auth/signup HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2025 20:30:04] "[31m[1mPOST /auth/signup HTTP/1.1[0m" 409 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\routes\\auth.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\routes\\auth.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\routes\\auth.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\routes\\auth.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\routes\\auth.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2025 21:29:52] "[35m[1mPOST /auth/signup HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2025 21:31:05] "[35m[1mPOST /auth/signup HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\routes\\auth.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+ERROR:root:Registration error: [WinError 10061] No connection could be made because the target machine actively refused it
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2025 21:31:47] "[35m[1mPOST /auth/signup HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\routes\\auth.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\routes\\auth.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\routes\\auth.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\routes\\auth.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\routes\\auth.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\routes\\auth.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\routes\\auth.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2025 21:44:43] "[31m[1mPOST /auth/signup HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2025 21:44:50] "[35m[1mPOST /auth/signup HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\routes\\auth.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\routes\\auth.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2025 21:50:58] "[31m[1mPOST /auth/signup HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2025 21:51:06] "[35m[1mPOST /auth/signup HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\routes\\auth.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2025 21:54:37] "[31m[1mPOST /auth/signup HTTP/1.1[0m" 400 -
+ERROR:root:Email error: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-3997f995766sm17493313f8f.1 - gsmtp')
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\UWRS\backend\routes\auth.py", line 47, in send_verification_email
+    current_app.extensions['mail'].send(msg)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask_mail\__init__.py", line 539, in send
+    with self.connect() as connection:
+         ^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask_mail\__init__.py", line 127, in __enter__
+    self.host = self.configure_host()
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask_mail\__init__.py", line 152, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+                   ^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-3997f995766sm17493313f8f.1 - gsmtp')
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2025 21:54:44] "[35m[1mPOST /auth/signup HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\routes\\auth.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+ERROR:root:Email error: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-3997f9b3ebcsm17559884f8f.47 - gsmtp')
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\UWRS\backend\routes\auth.py", line 48, in send_verification_email
+    current_app.extensions['mail'].send(msg)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask_mail\__init__.py", line 539, in send
+    with self.connect() as connection:
+         ^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask_mail\__init__.py", line 127, in __enter__
+    self.host = self.configure_host()
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask_mail\__init__.py", line 152, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+                   ^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-3997f9b3ebcsm17559884f8f.47 - gsmtp')
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2025 22:00:51] "[35m[1mPOST /auth/signup HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\routes\\auth.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+ERROR:root:Failed to send verification email to zuokumordavid01@gmail.com
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\UWRS\backend\routes\auth.py", line 69, in send_verification_email
+    mail.send(msg)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask_mail\__init__.py", line 540, in send
+    message.send(connection)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask_mail\__init__.py", line 482, in send
+    connection.send(self)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask_mail\__init__.py", line 177, in send
+    self.host.sendmail(
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 897, in sendmail
+    raise SMTPDataError(code, resp)
+smtplib.SMTPDataError: (550, b'The from address does not match a verified Sender Identity. Mail cannot be sent until this error is resolved. Visit https://sendgrid.com/docs/for-developers/sending-email/sender-identity/ to see the Sender Identity requirements')
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2025 22:19:25] "[35m[1mPOST /auth/signup HTTP/1.1[0m" 201 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\routes\\auth.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\routes\\auth.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\routes\\auth.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+ERROR:root:SMTP Error sending to cersertac@gmail.com: (550, b'The from address does not match a verified Sender Identity. Mail cannot be sent until this error is resolved. Visit https://sendgrid.com/docs/for-developers/sending-email/sender-identity/ to see the Sender Identity requirements')
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2025 22:31:23] "[35m[1mPOST /auth/signup HTTP/1.1[0m" 503 -
+ERROR:root:SMTP Error sending to cersertac@gmail.com: (550, b'The from address does not match a verified Sender Identity. Mail cannot be sent until this error is resolved. Visit https://sendgrid.com/docs/for-developers/sending-email/sender-identity/ to see the Sender Identity requirements')
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2025 22:35:54] "[35m[1mPOST /auth/signup HTTP/1.1[0m" 503 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:root:Verification email sent to cersertac@gmail.com
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2025 22:38:00] "[35m[1mPOST /auth/signup HTTP/1.1[0m" 202 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\app.py', reloading
+INFO:werkzeug: * Restarting with stat

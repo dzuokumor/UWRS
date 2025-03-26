@@ -1,9 +1,9 @@
-from flask import Blueprint, jsonify
+from flask import Blueprint, jsonify, request
 from flask_jwt_extended import jwt_required, get_jwt_identity
 from backend.db import db
-from backend.models import VolunteerMovement, Report
+from backend.models import VolunteerMovement, VolunteerParticipant
 import logging
-
+from datetime import datetime
 volunteer_bp = Blueprint("volunteer", __name__)
 
 def validate_jwt_identity(current_user):
@@ -23,23 +23,38 @@ def start_volunteer_movement(report_id):
     if error:
         return jsonify({"error": error}), 400
 
-    if user_role != "General":
-        return jsonify({"error": "Only general users can start a volunteer movement"}), 403
-
-    report = Report.query.get(report_id)
-    if not report:
-        return jsonify({"error": "Report not found"}), 404
-
     existing_movement = VolunteerMovement.query.filter_by(report_id=report_id).first()
     if existing_movement:
-        return jsonify({"error": "A volunteer movement for this report already exists"}), 400
+        return jsonify({"error": "A volunteer movement is already active for this report"}), 400
 
-    new_movement = VolunteerMovement(report_id=report_id, organizer_id=user_id)
-    db.session.add(new_movement)
-    db.session.commit()
+    needed_volunteers = request.json.get("needed_volunteers")
+    scheduled_date = request.json.get("scheduled_date")
+
+    if not needed_volunteers or not scheduled_date:
+        return jsonify({"error": "Both needed_volunteers and scheduled_date are required"}), 400
+
+    try:
+        scheduled_date = datetime.strptime(scheduled_date, "%Y-%m-%d %H:%M:%S")
+    except ValueError:
+        return jsonify({"error": "Invalid scheduled date format. Use 'YYYY-MM-DD HH:MM:SS"}), 400
+
+    new_movement = VolunteerMovement(
+        report_id=report_id,
+        organizer_id=user_id,
+        needed_volunteers=needed_volunteers,
+        scheduled_date=scheduled_date,
+        created_at=datetime.utcnow(),
+        status="active"
+    )
+
+    try:
+        db.session.add(new_movement)
+        db.session.commit()
+    except Exception as e:
+        db.session.rollback()
+        return jsonify({"error": str(e)}), 500
 
     return jsonify({"message": "Volunteer movement started successfully"}), 201
-
 
 @volunteer_bp.route("/volunteer/join/<int:report_id>", methods=["POST"])
 @jwt_required()
@@ -52,6 +67,10 @@ def join_volunteer_movement(report_id):
     movement = VolunteerMovement.query.filter_by(report_id=report_id).first()
     if not movement:
         return jsonify({"error": "No active volunteer movement for this report"}), 404
+
+    participant = VolunteerParticipant(movement_id=movement.id, user_id=user_id)
+    db.session.add(participant)
+    db.session.commit()
 
     return jsonify({"message": "Successfully joined the volunteer movement"}), 200
 

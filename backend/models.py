@@ -11,6 +11,7 @@ class User(db.Model):
     profile_picture = db.Column(db.Text, nullable=True)
     user_type = db.Column(db.String(20), nullable=False, default="general")
     role_code = db.Column(db.String(50), nullable=True)
+    is_verified = db.Column(db.Boolean, default=False)
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
 
 class Report(db.Model):
@@ -28,6 +29,13 @@ class VolunteerMovement(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     report_id = db.Column(db.Integer, db.ForeignKey('report.id'), nullable=False)
     organizer_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
-    needed_volunteers = db.Column(db.Integer, nullable=False)
+    needed_volunteers = db.Column(db.Integer, nullable=False, default=0)
     scheduled_date = db.Column(db.Date, nullable=False)
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    status = db.Column(db.String(20), default='active', nullable=False)
+
+class VolunteerParticipant(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    movement_id = db.Column(db.Integer, db.ForeignKey('volunteer_movement.id'), nullable=False)
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
+

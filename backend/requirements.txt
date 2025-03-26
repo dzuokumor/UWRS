@@ -2,3 +2,5 @@ flask
 flask_sqlalchemy
 flask_jwt_extended
 flask_cors
+flask-mail
+python-dotenv
