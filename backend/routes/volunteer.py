@@ -118,3 +118,22 @@ def unblock_volunteer_movement(report_id):
     db.session.commit()
 
     return jsonify({"message": "Volunteer movement unblocked successfully"}), 200
+
+
+@volunteer_bp.route("/volunteer/active-movements", methods=["GET"])
+def get_active_volunteer_movements():
+    active_movements = VolunteerMovement.query.filter_by(status="active").all()
+
+    movements_data = [
+        {
+            "id": movement.id,
+            "report_id": movement.report_id,
+            "organizer_id": movement.organizer_id,
+            "needed_volunteers": movement.needed_volunteers,
+            "scheduled_date": movement.scheduled_date.strftime("%Y-%m-%d"),
+            "created_at": movement.created_at.strftime("%Y-%m-%d %H:%M:%S")
+        }
+        for movement in active_movements
+    ]
+
+    return jsonify(movements_data), 200

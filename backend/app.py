@@ -29,6 +29,7 @@ app.config.update(
 )
 mail = Mail(app)
 
+app.config['FRONTEND_URL'] = os.getenv('FRONTEND_URL')
 
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(BASE_DIR, 'database', 'uwrs.db')
@@ -40,7 +41,17 @@ app.config['JWT_SECRET_KEY'] = os.getenv("JWT_SECRET_KEY", "uwrsdev")
 
 migrate = Migrate(app, db)
 bcrypt = Bcrypt(app)
-CORS(app)
+CORS(app,
+     resources={
+         r"/auth/*": {
+             "origins": ["http://localhost:3000", "http://127.0.0.1:3000"],
+             "methods": ["GET", "POST", "OPTIONS"],
+             "allow_headers": ["Content-Type", "Authorization"],
+             "supports_credentials": True,
+             "expose_headers": ["Content-Type"]
+         }
+     },
+     supports_credentials=True)
 jwt = JWTManager(app)
 
 db.init_app(app)

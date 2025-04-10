@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-100 text-gray-800;
+  }
+
+  .navbar-transition {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  @screen md {
+    body {
+      @apply pl-0;
+    }
+  }
+}
+
+@layer utilities {
+  .scrollbar-uwrs::-webkit-scrollbar {
+    @apply w-2;
+  }
+  .scrollbar-uwrs::-webkit-scrollbar-track {
+    @apply bg-gray-200;
+  }
+  .scrollbar-uwrs::-webkit-scrollbar-thumb {
+    @apply bg-red-500 rounded-full;
+  }
+
+  .mobile-menu-overlay {
+    @apply fixed inset-0 z-40 bg-black bg-opacity-50;
+  }
+}

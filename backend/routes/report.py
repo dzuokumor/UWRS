@@ -8,7 +8,6 @@ reports_bp = Blueprint("reports", __name__)
 
 
 def validate_jwt_identity(current_user):
-    """Helper function to validate and parse JWT identity"""
     if not isinstance(current_user, str):
         logging.error(f"JWT identity is not a string: {current_user} (type: {type(current_user)})")
         return None, None, "JWT identity must be a string"

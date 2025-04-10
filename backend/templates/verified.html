@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Verification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .tick {
+            font-size: 100px;
+            color: green;
+        }
+        .message {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        .login-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tick">&#10004;</div>
+    <div class="message">{{ status }}</div>
+    {% if status == "Email verified successfully! Please return to the login page." %}
+        <a href="{{ url_for('auth.login') }}" class="login-link">Go to Login</a>
+    {% endif %}
+</body>
+</html>
