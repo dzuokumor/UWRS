@@ -1,4 +1,4 @@
-import { claimReport, updateReportStatus } from '../../services/reports';
+import { claimReport, updateReportStatus } from '@/services/reports.js';
 
 export default function ReportActions({ reportId, isNgoOrGovernment }) {
   const handleClaim = async () => {

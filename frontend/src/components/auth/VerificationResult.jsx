@@ -37,7 +37,7 @@ export default function VerificationResult() {
   }, [status]);
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-4">
+    <div className="min-h-screen bg-white-50 flex flex-col items-center justify-center p-4">
       <div className="w-full max-w-md bg-white rounded-lg shadow-md p-8 text-center">
         {isSuccess ? (
           <CheckCircleIcon className="h-16 w-16 text-green-500 mx-auto mb-4" />

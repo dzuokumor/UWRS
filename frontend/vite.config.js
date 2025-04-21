@@ -1,19 +1,28 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import svgr from 'vite-plugin-svgr';
-import path from 'path';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import svgr from 'vite-plugin-svgr'
+import path from 'path'
 
 export default defineConfig({
   plugins: [
-    react(),
+    react({
+      jsxImportSource: '@emotion/react',
+      babel: {
+        plugins: ['@emotion/babel-plugin']
+      }
+    }),
     svgr({
       svgrOptions: {
         icon: true,
       }
     })
   ],
-  root: path.resolve(__dirname, 'src'),
-  publicDir: path.resolve(__dirname, 'public'),
+  define: {
+    'process.env': {},
+    'global': 'window'
+  },
+  root: path.resolve(__dirname, './src'),
+  publicDir: path.resolve(__dirname, './public'),
   server: {
     port: 3000,
     strictPort: true,
@@ -22,20 +31,22 @@ export default defineConfig({
       '/api': {
         target: 'http://localhost:5000',
         changeOrigin: true,
-        secure: false
+        secure: false,
+        rewrite: path => path.replace(/^\/api/, '')
       },
       '/auth': {
         target: 'http://localhost:5000',
         changeOrigin: true,
-        secure: false
+        secure: false,
+        rewrite: path => path
       }
     }
   },
   build: {
-    outDir: path.resolve(__dirname, 'dist'),
+    outDir: path.resolve(__dirname, './dist'),
     emptyOutDir: true,
     rollupOptions: {
-      input: path.resolve(__dirname, 'src/index.html'),
+      input: path.resolve(__dirname, './src/index.html'),
       output: {
         assetFileNames: 'assets/[name].[ext]'
       }
@@ -43,12 +54,22 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'src'),
-      '~assets': path.resolve(__dirname, 'src/assets')
+      '@': path.resolve(__dirname, './src'),
+      '~assets': path.resolve(__dirname, './src/assets')
     }
   },
-  assetsInclude: ['**/*.svg', '**/*.png', '**/*.jpg'],
   optimizeDeps: {
-    include: ['react', 'react-dom', 'react-router-dom']
+    include: [
+      'react',
+      'react-dom',
+      'react-router-dom',
+      '@emotion/react',
+      '@emotion/styled'
+    ],
+    esbuildOptions: {
+      define: {
+        global: 'window'
+      }
+    }
   }
-});
+})

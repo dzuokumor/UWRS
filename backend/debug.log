@@ -752,3 +752,515 @@ INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\bac
 INFO:werkzeug: * Restarting with stat
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 117-031-610
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2025 22:13:15] "OPTIONS /auth/validate-email HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2025 22:13:15] "POST /auth/validate-email HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2025 22:13:29] "OPTIONS /auth/signup HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2025 22:13:29] "[35m[1mPOST /auth/signup HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2025 22:29:27] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2025 22:29:27] "[31m[1mPOST /auth/login HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2025 22:29:57] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2025 22:29:57] "[31m[1mPOST /auth/login HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2025 22:29:59] "[31m[1mPOST /auth/login HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2025 22:30:22] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2025 22:30:22] "[31m[1mPOST /auth/login HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2025 22:31:12] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2025 22:31:12] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 117-031-610
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2025 22:57:37] "OPTIONS /auth/validate-email HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2025 22:57:37] "POST /auth/validate-email HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2025 22:57:48] "OPTIONS /auth/signup HTTP/1.1" 200 -
+INFO:root:Verification email sent to tywqe@ufg.com
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2025 22:57:51] "[35m[1mPOST /auth/signup HTTP/1.1[0m" 202 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 02:12:47] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 02:12:47] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 02:13:12] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 02:13:12] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 117-031-610
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 07:34:49] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 07:34:49] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 07:35:55] "[31m[1mGET /api/reports HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 07:35:55] "[31m[1mGET /api/reports HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 07:35:55] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 07:35:55] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 07:36:00] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 07:36:00] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 07:36:00] "[31m[1mGET /api/reports HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 07:36:00] "[31m[1mGET /api/reports HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 07:36:02] "[31m[1mGET /api/reports HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 07:36:02] "[31m[1mGET /api/reports HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 07:52:37] "[31m[1mGET /api/reports HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 07:52:37] "[31m[1mGET /api/reports HTTP/1.1[0m" 401 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 117-031-610
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 117-031-610
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\routes\\report.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 117-031-610
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\routes\\report.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 117-031-610
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:28:38] "[33mGET /reports HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:28:38] "[33mGET /reports HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:28:38] "[33mGET /reports HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:28:56] "[33mGET /reports HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:28:56] "[33mGET /reports HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:28:56] "[33mGET /reports HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:29:01] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:29:01] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:29:01] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:29:01] "[33mGET /reports HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:29:01] "[33mGET /reports HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:29:01] "[33mGET /reports HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:29:21] "[33mGET /reports HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:29:21] "[33mGET /reports HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:29:21] "[33mGET /reports HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:30:33] "[33mGET /reports HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:30:33] "[33mGET /reports HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:30:33] "[33mGET /reports HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:30:35] "[33mGET /reports HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:30:35] "[33mGET /reports HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:30:35] "[33mGET /reports HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:30:38] "[33mGET /reports HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:30:38] "[33mGET /reports HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:30:38] "[33mGET /reports HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:30:39] "[33mGET /reports HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:30:39] "[33mGET /reports HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:30:39] "[33mGET /reports HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:32:31] "[33mGET /reports HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:32:31] "[33mGET /reports HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:32:31] "[33mGET /reports HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:32:32] "[33mGET /reports HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:32:32] "[33mGET /reports HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:32:32] "[33mGET /reports HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 117-031-610
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\routes\\report.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 117-031-610
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:54:29] "[31m[1mGET /api/reports HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:54:29] "[31m[1mGET /api/reports HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:54:30] "[31m[1mGET /api/reports HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:54:30] "[31m[1mGET /api/reports HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:54:32] "[31m[1mGET /api/reports HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:54:32] "[31m[1mGET /api/reports HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:54:36] "[31m[1mGET /api/reports HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:54:36] "[31m[1mGET /api/reports HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:54:37] "[31m[1mGET /api/reports HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:54:37] "[31m[1mGET /api/reports HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:54:39] "[31m[1mGET /api/reports HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:54:39] "[31m[1mGET /api/reports HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:54:46] "[31m[1mGET /api/reports HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:54:46] "[31m[1mGET /api/reports HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:54:47] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:54:47] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:54:48] "[31m[1mGET /api/reports HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:54:48] "[31m[1mGET /api/reports HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:54:50] "[31m[1mGET /api/reports HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:54:50] "[31m[1mGET /api/reports HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:54:50] "[31m[1mGET /api/reports HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:54:50] "[31m[1mGET /api/reports HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:54:53] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:54:54] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:55:37] "[31m[1mGET /api/reports HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 19:55:37] "[31m[1mGET /api/reports HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 20:12:21] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 20:12:21] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 20:12:50] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 20:12:50] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 20:13:01] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 20:13:02] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 20:26:46] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 20:26:47] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 20:46:51] "[32mGET /auth/verify-email/.eJwtj8lqAmEQhF8lDB6j_Psyp4CHEHILBnIb2l5UMo7DLIqGvHt-ibfur4ruqp9K5rZtOjhyVVfr0zDyMMH5ac3_U_VcdQf8fug32I2F8BEObVnxYcKX3Z2s8HQsag_jeDkN1Oxh3BfXiMO1n2prYkh1qvWCbu8f67n7fOPN-evyel4Y2BJntNklDIgUEgfnU4wsnklMSgZFqyBiNFHArJ3XRgVvvIWQFBB5CpCdMyIu2EistjkGJ1Zll0kwilIpgY6oAAJGi2JdElXOlncl9FyKNNO1v7fccccDtIXiwDAxNTAVbJTxS-WWWm20rp0ujVbW5Gxd9fsHi5pjtg.Z_eubA.jRP4Doizi3zCNp6yM9n1DkKBJBE HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 20:47:23] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 20:47:24] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 21:27:14] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 21:27:15] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 21:27:24] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 21:27:24] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 21:27:26] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 21:27:26] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 21:35:52] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 21:35:52] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 21:36:09] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 21:36:09] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 21:36:41] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 21:36:41] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 21:59:46] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 21:59:46] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 22:06:26] "OPTIONS /api/reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 22:06:26] "OPTIONS /api/reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 22:06:26] "[31m[1mGET /api/reports HTTP/1.1[0m" 422 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 22:06:26] "[31m[1mGET /api/reports HTTP/1.1[0m" 422 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 22:08:00] "OPTIONS /api/reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 22:08:00] "OPTIONS /api/reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 22:08:00] "[31m[1mGET /api/reports HTTP/1.1[0m" 422 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 22:08:00] "[31m[1mGET /api/reports HTTP/1.1[0m" 422 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 22:08:04] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 22:08:04] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 22:08:07] "OPTIONS /api/reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 22:08:07] "OPTIONS /api/reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 22:08:07] "[31m[1mGET /api/reports HTTP/1.1[0m" 422 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 22:08:07] "[31m[1mGET /api/reports HTTP/1.1[0m" 422 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 22:08:07] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 22:08:08] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 22:58:53] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 22:58:53] "OPTIONS /api/reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 22:58:53] "OPTIONS /api/reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 22:58:53] "[31m[1mGET /api/reports HTTP/1.1[0m" 422 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 22:58:53] "[31m[1mGET /api/reports HTTP/1.1[0m" 422 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 22:58:53] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 22:58:56] "[31m[1mGET /api/reports HTTP/1.1[0m" 422 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 22:58:56] "[31m[1mGET /api/reports HTTP/1.1[0m" 422 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 22:58:57] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 22:58:57] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 22:58:57] "[31m[1mGET /api/reports HTTP/1.1[0m" 422 -
+INFO:werkzeug:127.0.0.1 - - [11/Apr/2025 22:58:57] "[31m[1mGET /api/reports HTTP/1.1[0m" 422 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2025 00:14:26] "OPTIONS /api/submit_report HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2025 00:14:26] "[31m[1mPOST /api/submit_report HTTP/1.1[0m" 422 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2025 00:15:25] "OPTIONS /api/submit_report HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2025 00:15:25] "[31m[1mPOST /api/submit_report HTTP/1.1[0m" 422 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2025 00:15:42] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2025 00:15:43] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 117-031-610
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 21:40:52] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 21:40:52] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 21:41:12] "[33mOPTIONS /api/auth/login HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 21:41:25] "[33mOPTIONS /api/auth/login HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 21:41:28] "[33mOPTIONS /api/auth/login HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:11:53] "[33mOPTIONS /api/auth/login HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:12:10] "[33mOPTIONS /api/auth/login HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 117-031-610
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:12:39] "[33mOPTIONS /api/auth/login HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 117-031-610
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\routes\\auth.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 117-031-610
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:30:17] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:30:17] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:30:19] "[33mOPTIONS /api/auth/login HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\routes\\auth.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 117-031-610
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:33:44] "[33mOPTIONS /api/auth/login HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:33:55] "[33mGET /api/auth/login HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:33:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:38:59] "[33mOPTIONS /api/auth/login HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:39:03] "[33mOPTIONS /api/auth/login HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 117-031-610
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 117-031-610
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:47:47] "[33mOPTIONS /api/auth/login HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:49:09] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:49:09] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:49:11] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:49:14] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:49:18] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:49:18] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:49:47] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:49:54] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:50:38] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:50:38] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:50:44] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:50:45] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:50:47] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:52:41] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:52:42] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:53:33] "OPTIONS /api/reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:53:33] "OPTIONS /api/reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:53:33] "[31m[1mGET /api/reports HTTP/1.1[0m" 422 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:53:33] "[31m[1mGET /api/reports HTTP/1.1[0m" 422 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:53:35] "[31m[1mGET /api/reports HTTP/1.1[0m" 422 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:53:35] "[31m[1mGET /api/reports HTTP/1.1[0m" 422 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:53:54] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:53:54] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:57:16] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:57:16] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 117-031-610
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:58:06] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2025 22:58:06] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 117-031-610
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2025 02:54:00] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2025 02:54:00] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2025 02:54:19] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2025 02:54:19] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2025 02:54:20] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2025 02:54:21] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2025 02:54:22] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2025 02:54:22] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2025 02:54:23] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2025 02:54:24] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2025 03:03:20] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2025 03:03:21] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2025 03:05:41] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2025 03:05:41] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2025 03:09:50] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2025 03:09:50] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2025 03:13:14] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2025 03:13:15] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2025 03:15:03] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2025 03:15:03] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2025 03:15:07] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2025 03:19:15] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2025 03:19:16] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2025 03:19:20] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2025 03:28:33] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2025 03:28:34] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2025 03:36:10] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2025 03:36:10] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2025 03:38:00] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2025 03:38:00] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2025 03:44:05] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2025 03:44:05] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\routes\\auth.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 117-031-610
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2025 03:55:32] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2025 03:55:32] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\routes\\auth.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 117-031-610
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2025 03:56:16] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2025 03:56:17] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\routes\\auth.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 117-031-610
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\routes\\auth.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 117-031-610
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2025 04:05:39] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2025 04:05:39] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 117-031-610
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2025 23:04:09] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2025 23:04:09] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\routes\\auth.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 117-031-610
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2025 23:11:08] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2025 23:11:08] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2025 23:22:27] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2025 23:22:27] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2025 23:25:14] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2025 23:25:15] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2025 23:25:23] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2025 23:25:23] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2025 23:30:24] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2025 23:30:24] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2025 23:34:06] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2025 23:34:06] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2025 23:43:33] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2025 23:43:33] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Apr/2025 03:42:50] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Apr/2025 03:42:51] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Apr/2025 03:44:22] "[33mOPTIONS /submit_report HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Apr/2025 03:44:32] "[33mGET /submit_report HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Apr/2025 03:44:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Apr/2025 03:44:42] "[33mGET /submit_report HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Apr/2025 15:57:00] "OPTIONS /api/reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Apr/2025 15:57:00] "OPTIONS /api/reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Apr/2025 15:57:01] "[35m[1mGET /api/reports HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [16/Apr/2025 15:57:01] "[35m[1mGET /api/reports HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [16/Apr/2025 15:57:03] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Apr/2025 15:57:04] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Apr/2025 15:57:05] "[35m[1mGET /api/reports HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [16/Apr/2025 15:57:05] "[35m[1mGET /api/reports HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [16/Apr/2025 15:57:25] "OPTIONS /api/reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Apr/2025 15:57:25] "[35m[1mGET /api/reports HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [16/Apr/2025 15:57:25] "OPTIONS /api/reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Apr/2025 15:57:25] "[35m[1mGET /api/reports HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [16/Apr/2025 15:58:47] "OPTIONS /api/reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Apr/2025 15:58:47] "OPTIONS /api/reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Apr/2025 15:58:47] "[35m[1mGET /api/reports HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [16/Apr/2025 15:58:47] "[35m[1mGET /api/reports HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 20:49:50] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 20:49:51] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 20:50:01] "OPTIONS /api/reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 20:50:01] "[35m[1mGET /api/reports HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 20:50:01] "OPTIONS /api/reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 20:50:01] "[35m[1mGET /api/reports HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 20:50:21] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 20:50:21] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 20:50:57] "OPTIONS /api/reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 20:50:57] "OPTIONS /api/reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 20:50:57] "[35m[1mGET /api/reports HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 20:50:58] "[35m[1mGET /api/reports HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 20:54:17] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 20:54:18] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 20:57:32] "[32mGET /auth/verify-email/.eJxNjztrw0AQhP9KEC5jc7d7T1UOIX2CnRRpxGpvzzaWZaMHxoT895y6lPPNMMz8VHnuuqani1R1taP-RE-fdxqleq76E5__GwXJhU5d0eOi5yW3PSxow9dLsW80jvfrkJojjcclxsPjNtUI3oU61Hqlho-31xc47yeZv9533ysbFDOIh4jGoJeANra5NZCYUbeWMCUfKKhWm5g5a4Yk6IJGMaSljegN5pjQqpQFkwTiKJyFvM0BA8fEylnRDkg4KomtYvDQhhxLuS2j51GGZnrclp8H6WWgrlAehCZJDU0FgwK7Vmat1V7HGlwNuIkuugDV7x9RYmF-.Z_gbXw.NMEJTnJXInsyeY924Z6vsshzJL8 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 20:59:47] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 20:59:47] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 21:00:01] "[32mGET /auth/verify-email/.eJxNjztrw0AQhP9KEC5jc7d7T1UOIX2CnRRpxGpvzzaWZaMHxoT895y6lPPNMMz8VHnuuqani1R1taP-RE-fdxqleq76E5__GwXJhU5d0eOi5yW3PSxow9dLsW80jvfrkJojjcclxsPjNtUI3oU61Hqlho-31xc47yeZv9533ysbFDOIh4jGoJeANra5NZCYUbeWMCUfKKhWm5g5a4Yk6IJGMaSljegN5pjQqpQFkwTiKJyFvM0BA8fEylnRDkg4KomtYvDQhhxLuS2j51GGZnrclp8H6WWgrlAehCZJDU0FgwK7Vmat1V7HGlwNuIkuugDV7x9RYmF-.Z_gbXw.NMEJTnJXInsyeY924Z6vsshzJL8 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 21:16:42] "[32mGET /auth/verify-email/.eJxNjztrw0AQhP9KEC5jc7d7T1UOIX2CnRRpxGpvzzaWZaMHxoT895y6lPPNMMz8VHnuuqani1R1taP-RE-fdxqleq76E5__GwXJhU5d0eOi5yW3PSxow9dLsW80jvfrkJojjcclxsPjNtUI3oU61Hqlho-31xc47yeZv9533ysbFDOIh4jGoJeANra5NZCYUbeWMCUfKKhWm5g5a4Yk6IJGMaSljegN5pjQqpQFkwTiKJyFvM0BA8fEylnRDkg4KomtYvDQhhxLuS2j51GGZnrclp8H6WWgrlAehCZJDU0FgwK7Vmat1V7HGlwNuIkuugDV7x9RYmF-.Z_gbXw.NMEJTnJXInsyeY924Z6vsshzJL8 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 21:16:52] "OPTIONS /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 21:16:53] "POST /auth/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 21:17:40] "[33mOPTIONS /submit_report HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 21:37:13] "OPTIONS /submit_report HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 21:37:14] "[33mPOST /submit_report HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 21:37:20] "OPTIONS /submit_report HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 21:37:20] "[33mPOST /submit_report HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 21:40:47] "OPTIONS /submit_report HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 21:40:47] "[33mPOST /submit_report HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 21:41:47] "[31m[1mGET /api/submit_report HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 21:41:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 21:41:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 21:45:25] "OPTIONS /api/submit_report HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 21:45:25] "[35m[1mPOST /api/submit_report HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\routes\\report.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 21:47:40] "OPTIONS /api/submit_report HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 21:47:40] "[35m[1mPOST /api/submit_report HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\routes\\report.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug: * Detected change in 'C:\\Users\\user\\PycharmProjects\\UWRS\\backend\\routes\\report.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 21:50:11] "OPTIONS /api/submit_report HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.cloudinary.com:443
+DEBUG:urllib3.connectionpool:https://api.cloudinary.com:443 "POST /v1_1/uwrs/image/upload HTTP/1.1" 401 None
+ERROR:root:Image upload error: Invalid api_key cloudinary://893427441611367:opV4WuQWAQVf_p8tZGZKUiQpceg@uwrs
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 21:50:14] "[35m[1mPOST /api/submit_report HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 21:50:21] "OPTIONS /api/submit_report HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://api.cloudinary.com:443 "POST /v1_1/uwrs/image/upload HTTP/1.1" 401 None
+ERROR:root:Image upload error: Invalid api_key cloudinary://893427441611367:opV4WuQWAQVf_p8tZGZKUiQpceg@uwrs
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 21:50:22] "[35m[1mPOST /api/submit_report HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 21:54:42] "OPTIONS /api/submit_report HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://api.cloudinary.com:443 "POST /v1_1/uwrs/image/upload HTTP/1.1" 401 None
+ERROR:root:Image upload error: Invalid api_key cloudinary://893427441611367:opV4WuQWAQVf_p8tZGZKUiQpceg@uwrs
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 21:54:43] "[35m[1mPOST /api/submit_report HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 21:54:50] "OPTIONS /api/submit_report HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://api.cloudinary.com:443 "POST /v1_1/uwrs/image/upload HTTP/1.1" 401 None
+ERROR:root:Image upload error: Invalid api_key cloudinary://893427441611367:opV4WuQWAQVf_p8tZGZKUiQpceg@uwrs
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 21:54:51] "[35m[1mPOST /api/submit_report HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 21:56:50] "OPTIONS /api/submit_report HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://api.cloudinary.com:443 "POST /v1_1/uwrs/image/upload HTTP/1.1" 401 None
+ERROR:root:Image upload error: Invalid api_key cloudinary://893427441611367:opV4WuQWAQVf_p8tZGZKUiQpceg@uwrs
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 21:56:51] "[35m[1mPOST /api/submit_report HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 21:57:01] "OPTIONS /api/submit_report HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://api.cloudinary.com:443 "POST /v1_1/uwrs/image/upload HTTP/1.1" 401 None
+ERROR:root:Image upload error: Invalid api_key cloudinary://893427441611367:opV4WuQWAQVf_p8tZGZKUiQpceg@uwrs
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 21:57:02] "[35m[1mPOST /api/submit_report HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 21:58:56] "OPTIONS /api/submit_report HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://api.cloudinary.com:443 "POST /v1_1/uwrs/image/upload HTTP/1.1" 401 None
+ERROR:root:Image upload error: Invalid api_key cloudinary://893427441611367:opV4WuQWAQVf_p8tZGZKUiQpceg@uwrs
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 21:58:58] "[35m[1mPOST /api/submit_report HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 374-517-031
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 22:01:34] "OPTIONS /api/submit_report HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.cloudinary.com:443
+DEBUG:urllib3.connectionpool:https://api.cloudinary.com:443 "POST /v1_1/uwrs/image/upload HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 22:01:37] "[35m[1mPOST /api/submit_report HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 22:02:13] "OPTIONS /api/reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 22:02:13] "GET /api/reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 22:02:13] "OPTIONS /api/reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 22:02:14] "GET /api/reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 22:02:19] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 22:02:19] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 22:02:20] "OPTIONS /api/reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 22:02:20] "OPTIONS /api/reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 22:02:20] "GET /api/reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 22:02:20] "GET /api/reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 22:56:06] "OPTIONS /api/reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 22:56:06] "OPTIONS /api/reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 22:56:06] "GET /api/reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 22:56:06] "GET /api/reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 22:56:22] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 22:56:22] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 22:56:24] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 22:56:25] "GET /api/volunteer/active-movements HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 22:56:26] "OPTIONS /api/reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 22:56:26] "GET /api/reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 22:56:26] "OPTIONS /api/reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 22:56:26] "GET /api/reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 22:56:29] "GET /api/reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Apr/2025 22:56:29] "GET /api/reports HTTP/1.1" 200 -

@@ -26,42 +26,38 @@ export default function LoginForm() {
   }, []);
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    setError('');
-    setIsLoading(true);
-    setIsSuccess(false);
+  e.preventDefault();
+  setError('');
+  setIsLoading(true);
 
-    try {
-      const data = await authService.login(
-        email,
-        isSpecialUser ? '' : password,
-        isSpecialUser ? roleCode : ''
-      );
+  try {
+  const response = await authService.login(
+    email,
+    isSpecialUser ? '' : password,
+    isSpecialUser ? roleCode : ''
+  );
 
-      if (rememberMe) {
-        localStorage.setItem('rememberedEmail', email);
-      } else {
-        localStorage.removeItem('rememberedEmail');
-      }
+  if (!response.success || !response.data?.access_token) {
+    throw new Error(response.error || 'Authentication failed');
+  }
 
-      localStorage.setItem('token', data.access_token);
-      localStorage.setItem('userRole', data.role);
-      localStorage.setItem('userId', data.user_id);
+  localStorage.setItem('token', response.data.access_token);
+  localStorage.setItem('userRole', response.data.role);
+  localStorage.setItem('userId', response.data.user_id);
+  localStorage.setItem('userEmail', response.data.email);
+  setIsSuccess(true);
 
-      setIsSuccess(true);
-
-      setTimeout(() => {
-        setIsLoading(false);
-        window.location.href = '/dashboard';
-      }, 3000);
-
-    } catch (err) {
-      setError(err.message.includes('Network')
-        ? 'Cannot connect to server. Check your internet connection.'
-        : err.message);
-      setIsLoading(false);
-    }
-  };
+  setTimeout(() => window.location.href = '/dashboard', 3000);
+} catch (err) {
+    setError(
+      err.message.includes('credentials') ? 'Invalid email/password' :
+      err.message.includes('verified') ? 'Verify your email first' :
+      'Login failed. Please try again.'
+    );
+  } finally {
+    setIsLoading(false);
+  }
+};
 
   return (
     <div className={`min-h-screen bg-gray-100 flex items-center justify-center transition-all duration-500 ${isMounted ? 'opacity-100' : 'opacity-0'}`}>
@@ -79,49 +75,49 @@ export default function LoginForm() {
             <div>
               <label className="block text-gray-800 mb-2">Email</label>
               <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent hover:border-gray-400 transition"
-                required
-                autoFocus
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent hover:border-gray-400 transition"
+                  required
+                  autoFocus
               />
             </div>
 
             {!isSpecialUser && (
-              <div>
-                <label className="block text-gray-800 mb-2">Password</label>
-                <input
-                  type="password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent hover:border-gray-400 transition"
-                  required
-                  minLength={8}
-                />
-              </div>
+                <div>
+                  <label className="block text-gray-800 mb-2">Password</label>
+                  <input
+                      type="password"
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
+                      className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent hover:border-gray-400 transition"
+                      required
+                      minLength={8}
+                  />
+                </div>
             )}
 
             {isSpecialUser && (
-              <div>
-                <label className="block text-gray-800 mb-2">Password</label>
-                <input
-                  type="text"
-                  value={roleCode}
-                  onChange={(e) => setRoleCode(e.target.value)}
-                  className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent hover:border-gray-400 transition"
-                  required
-                />
-              </div>
+                <div>
+                  <label className="block text-gray-800 mb-2">Password</label>
+                  <input
+                      type="text"
+                      value={roleCode}
+                      onChange={(e) => setRoleCode(e.target.value)}
+                      className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent hover:border-gray-400 transition"
+                      required
+                  />
+                </div>
             )}
 
             <div className="flex items-center justify-between">
               <div className="flex items-center">
                 <input
-                  type="checkbox"
-                  checked={rememberMe}
-                  onChange={(e) => setRememberMe(e.target.checked)}
-                  className="h-4 w-4 text-red-600 focus:ring-red-500 border-gray-300 rounded"
+                    type="checkbox"
+                    checked={rememberMe}
+                    onChange={(e) => setRememberMe(e.target.checked)}
+                    className="h-4 w-4 text-red-600 focus:ring-red-500 border-gray-300 rounded"
                 />
                 <label className="ml-2 text-gray-700">Remember me</label>
               </div>
@@ -131,25 +127,27 @@ export default function LoginForm() {
             </div>
 
             <button
-              type="submit"
-              disabled={isLoading || isSuccess}
-              className={`w-full py-3 px-4 rounded-lg font-medium text-white transition ${
-                isLoading || isSuccess ? 'bg-gray-500' : 'bg-red-600 hover:bg-red-700'
-              }`}
+                type="submit"
+                disabled={isLoading || isSuccess}
+                className={`w-full py-3 px-4 rounded-lg font-medium text-white transition ${
+                    isLoading || isSuccess ? 'bg-gray-500' : 'bg-red-600 hover:bg-red-700'
+                }`}
             >
               {(isLoading || isSuccess) ? (
-                <div className="flex items-center justify-center">
-                  <svg
-                    className="animate-spin-slow h-5 w-5 text-white mr-3"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                  >
-                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                  </svg>
-                  {isSuccess ? 'Login Successful!' : 'Logging in...'}
-                </div>
+                  <div className="flex items-center justify-center">
+                    <svg
+                        className="animate-spin-slow h-5 w-5 text-white mr-3"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                    >
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor"
+                              strokeWidth="4"></circle>
+                      <path className="opacity-75" fill="currentColor"
+                            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    {isSuccess ? 'Login Successful!' : 'Logging in...'}
+                  </div>
               ) : 'Log In'}
             </button>
 
@@ -165,9 +163,9 @@ export default function LoginForm() {
         <div className="w-1/2 bg-white rounded-r-lg flex items-center justify-center p-8 border-l border-gray-200">
           <div className="text-center">
             <img
-              src={loginSvg}
-              alt="UWRS Login"
-              className="w-64 h-64 mx-auto"
+                src={loginSvg}
+                alt="UWRS Login"
+                className="w-64 h-64 mx-auto"
             />
           </div>
         </div>

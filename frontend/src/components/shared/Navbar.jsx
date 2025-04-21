@@ -20,7 +20,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const token = localStorage.getItem('token');
-    const email = localStorage.getItem('email');
+    const email = localStorage.getItem('userEmail');
     if (token) {
       setIsLoggedIn(true);
       setUserEmail(email || '');

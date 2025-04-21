@@ -51,7 +51,7 @@ def send_verification_email(user_email, user_data):
                 <h2 style="color: #2c3e50;">Welcome to UWRS!</h2>
                 <p>Please verify your email address to complete registration:</p>
                 <a href="{confirm_url}" 
-                   style="background-color: #3498db; 
+                   style="background-color: #e63946; 
                           color: white; 
                           padding: 10px 20px; 
                           text-decoration: none; 
@@ -284,98 +284,67 @@ def resend_verification():
 @auth_bp.route("/login", methods=["POST", "OPTIONS"])
 def login():
     if request.method == "OPTIONS":
-        response = jsonify({"status": "preflight"})
-        response.headers.add("Access-Control-Allow-Origin", "http://localhost:3000")
-        response.headers.add("Access-Control-Allow-Credentials", "true")
-        response.headers.add("Access-Control-Allow-Headers", "Content-Type,Authorization")
-        response.headers.add("Access-Control-Allow-Methods", "POST, OPTIONS")
-        return response
+        return jsonify({"status": "ok"}), 200
 
-    if not request.is_json:
-        response = jsonify({"error": "Request must be JSON"})
-        response.headers.add("Access-Control-Allow-Origin", "http://localhost:3000")
-        response.headers.add("Access-Control-Allow-Credentials", "true")
-        return response, 415
+    def error_response(message, status_code):
+        return jsonify({
+            "error": message,
+            "success": False,
+            "status": status_code
+        }), status_code
 
     try:
+        if not request.is_json:
+            return error_response("Request must be JSON", 415)
+
         data = request.get_json()
-    except Exception as e:
-        logging.error(f"JSON parse error: {str(e)}")
-        response = jsonify({"error": "Invalid JSON"})
-        response.headers.add("Access-Control-Allow-Origin", "http://localhost:3000")
-        response.headers.add("Access-Control-Allow-Credentials", "true")
-        return response, 400
+        email = data.get("email", "").strip().lower()
+        password = data.get("password", "").strip()
+        role_code = data.get("role_code", "").strip()
 
-    email = data.get("email", "").strip().lower()
-    password = data.get("password", "").strip()
-    role_code = data.get("role_code", "").strip()
+        if not email:
+            return error_response("Email is required", 400)
 
-    if not email:
-        response = jsonify({"error": "Email is required"})
-        response.headers.add("Access-Control-Allow-Origin", "http://localhost:3000")
-        response.headers.add("Access-Control-Allow-Credentials", "true")
-        return response, 400
+        user = User.query.filter_by(email=email).first()
+        if not user:
+            return error_response("Invalid credentials", 401)
 
-    user = User.query.filter_by(email=email).first()
-    if not user:
-        response = jsonify({"error": "Invalid credentials"})
-        response.headers.add("Access-Control-Allow-Origin", "http://localhost:3000")
-        response.headers.add("Access-Control-Allow-Credentials", "true")
-        return response, 401
+        if not user.is_verified:
+            return error_response("Please verify your email", 403)
 
-    if not user.is_verified:
-        response = jsonify({"error": "Please verify your email before logging in"})
-        response.headers.add("Access-Control-Allow-Origin", "http://localhost:3000")
-        response.headers.add("Access-Control-Allow-Credentials", "true")
-        return response, 403
+        if user.user_type == "general":
+            if not password:
+                return error_response("Password is required", 400)
+            if not check_password_hash(user.password_hash, password):
+                return error_response("Invalid credentials", 401)
+        else:
+            if not role_code:
+                return error_response("Role code is required", 400)
+            if role_code != user.role_code:
+                return error_response("Invalid credentials", 401)
 
-    if user.user_type == "general":
-        if not password:
-            response = jsonify({"error": "Password is required"})
-            response.headers.add("Access-Control-Allow-Origin", "http://localhost:3000")
-            response.headers.add("Access-Control-Allow-Credentials", "true")
-            return response, 400
-        if not check_password_hash(user.password_hash, password):
-            response = jsonify({"error": "Invalid credentials"})
-            response.headers.add("Access-Control-Allow-Origin", "http://localhost:3000")
-            response.headers.add("Access-Control-Allow-Credentials", "true")
-            return response, 401
-    else:
-        if not role_code:
-            response = jsonify({"error": "Role code is required"})
-            response.headers.add("Access-Control-Allow-Origin", "http://localhost:3000")
-            response.headers.add("Access-Control-Allow-Credentials", "true")
-            return response, 400
-        if role_code != user.role_code:
-            response = jsonify({"error": "Invalid credentials"})
-            response.headers.add("Access-Control-Allow-Origin", "http://localhost:3000")
-            response.headers.add("Access-Control-Allow-Credentials", "true")
-            return response, 401
+        access_token = create_access_token(
+            identity=f"{user.id}-{user.user_type}",
+            expires_delta=timedelta(days=1))
 
-    try:
-        identity_data = f"{user.id}-{user.user_type}"
-        access_token = create_access_token(identity=str(identity_data), expires_delta=timedelta(days=1))
-        decoded = decode_token(access_token)
-        if not isinstance(decoded['sub'], str):
-            raise ValueError("Token subject is not a string")
-
-        response = jsonify({
-            "access_token": access_token,
-            "role": user.user_type,
-            "user_id": user.id,
-            "email": user.email,
-            "is_verified": user.is_verified
-        })
-        response.headers.add("Access-Control-Allow-Origin", "http://localhost:3000")
-        response.headers.add("Access-Control-Allow-Credentials", "true")
-        return response, 200
+        return jsonify({
+            "data": {
+                "access_token": access_token,
+                "role": user.user_type,
+                "user_id": user.id,
+                "email": user.email,
+                "is_verified": user.is_verified
+            },
+            "success": True,
+            "status": "success"
+        }), 200
 
     except Exception as e:
-        logging.error(f"Token creation error: {str(e)}")
-        response = jsonify({"error": "Login failed"})
-        response.headers.add("Access-Control-Allow-Origin", "http://localhost:3000")
-        response.headers.add("Access-Control-Allow-Credentials", "true")
-        return response, 500
+        logging.error(f"Login error: {str(e)}")
+        return jsonify({
+            "error": str(e),
+            "status": "error"
+        }), 500
 
 
 @auth_bp.route("/protected", methods=["GET"])

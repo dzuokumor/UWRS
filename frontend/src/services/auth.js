@@ -1,41 +1,39 @@
 import api from './api';
 
 export default {
-  async login(email, password = '', roleCode = '') {
-    try {
-      const isSpecialUser = email.includes('@ngo.com') || email.includes('@gov.com');
-      const response = await api.post('/auth/login', {
-        email,
-        password: isSpecialUser ? '' : password,
-        role_code: isSpecialUser ? roleCode : ''
-      });
+async login(email, password = '', roleCode = '') {
+  try {
+    const response = await api.post('/auth/login', {
+      email,
+      password: email.includes('@ngo.com') || email.includes('@gov.com') ? '' : password,
+      role_code: email.includes('@ngo.com') || email.includes('@gov.com') ? roleCode : ''
+    });
 
-      localStorage.setItem('token', response.data.access_token);
-      localStorage.setItem('userRole', response.data.role);
-      localStorage.setItem('userId', response.data.user_id);
-      localStorage.setItem('email', email);
+    return { success: true, data: response.data };
 
-      return {
-        data: {
-          access_token: response.data.access_token,
-          role: response.data.role,
-          user_id: response.data.user_id
-        }
-      };
-    } catch (error) {
-      if (error.response) {
-        throw new Error(error.response.data.error || 'Authentication failed');
-      }
-      throw new Error('Network error');
+  } catch (error) {
+    return {
+      success: false,
+      error: error.response?.data?.error || error.message,
+      status: error.response?.data?.status || 500
     }
+  }
   },
-
   logout() {
     localStorage.removeItem('token');
     localStorage.removeItem('userRole');
     localStorage.removeItem('userId');
     localStorage.removeItem('email');
+    localStorage.removeItem('verified');
     return true;
+  },
+
+  isAuthenticated() {
+    return !!localStorage.getItem('token');
+  },
+
+  isVerified() {
+    return localStorage.getItem('verified') === 'true';
   },
 
   async signup(fullName, email, password, nickname = '') {
@@ -48,11 +46,12 @@ export default {
         is_special_user: email.includes('@ngo.com') || email.includes('@gov.com')
       });
       return response.data;
-    } catch (error) {
-      if (error.response) {
-        throw new Error(error.response.data.error || 'Registration failed');
-      }
-      throw new Error('Network error');
+    }
+    catch (error) {
+      throw new Error(
+        error.response?.data?.error ||
+        'Registration failed. Please try again.'
+      );
     }
   },
 
@@ -61,10 +60,10 @@ export default {
       const response = await api.post('/auth/resend-verification', { email });
       return response.data;
     } catch (error) {
-      if (error.response) {
-        throw new Error(error.response.data.error || 'Failed to resend verification');
-      }
-      throw new Error('Network error');
+      throw new Error(
+        error.response?.data?.error ||
+        'Failed to resend verification email'
+      );
     }
   },
 
@@ -73,10 +72,22 @@ export default {
       const response = await api.post('/auth/validate-email', {email});
       return response.data;
     } catch (error) {
-      if (error.response) {
-        throw new Error(error.response.data.error || 'Email validation failed');
-      }
-      throw new Error(error.message || 'Network error');
+      throw new Error(
+        error.response?.data?.error ||
+        'Email validation failed'
+      );
     }
+  },
+async getReports() {
+  try {
+    const response = await api.get('/api/reports');
+    console.log("Full response:", response);
+    return response;
+  } catch (error) {
+    console.error("Fetch reports error:", error);
+    throw new Error(
+      error.response?.data?.error || 'Failed to fetch reports'
+    );
+  }
   }
 };
